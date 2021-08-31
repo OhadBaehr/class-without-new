@@ -1,37 +1,30 @@
 {
-  "name": "class-without-new",
-  "version": "1.0.0",
-  "description": "No New Needed, Export a class in a way that enables use without the \"new\" keyword",
-  "main": "classExport.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/OhadBaehr/class-without-new.git"
-  },
-  "exports": {
-    "import": "./index.mjs",
-    "require": "./index.cjs"
-  },
-  "keywords": [
-    "class-without-new",
-    "no new needed",
-    "nnn",
-    "classExport",
-    "class-export",
-    "class",
-    "export",
-    "noNew",
-    "new",
-    "class",
-    "no new",
-    "new"
-  ],
-  "author": "Ohad Baehr",
-  "license": "Unlicense",
-  "bugs": {
-    "url": "https://github.com/OhadBaehr/class-without-new/issues"
-  },
-  "homepage": "https://github.com/OhadBaehr/class-without-new#readme"
-}
+    "name": "class-without-new",
+    "version": "2.0.0",
+    "description": "wrap around an es6 class to call without 'new'",
+    "main": "index.cjs",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/OhadBaehr/easy-inherit.git"
+    },
+    "exports": {
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    },
+    "keywords": [
+      "class-without-new",
+      "class without new",
+      "new",
+      "class"
+    ],
+    "author": "Ohad Baehr",
+    "license": "Unlicense",
+    "bugs": {
+      "url": "https://github.com/OhadBaehr/class-without-new/issues"
+    },
+    "homepage": "https://github.com/OhadBaehr/class-without-new#readme"
+  }
+  

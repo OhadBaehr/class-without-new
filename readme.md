@@ -1,13 +1,45 @@
 ## USAGE
 ES6:
 
-
-    import  classWithoutNew  from  'class-without-new'
-    export  const  Dog= classWithoutNew(class  Dog{...})
+```js
+    import proxy from ('class-without-new')
+```
+        
 
 Node:
 
   
-    const  classWithoutNew = require('class-without-new')
-    const  Dog= classWithoutNew(class  Dog{...})
-    module.exports=Dog
+```js
+    const transpile= require('class-without-new')
+```
+
+
+Usage:
+
+```js
+    const Animal = transpile(class Animal {
+		static create() {
+			return new Animal
+		}
+		constructor() {
+
+		}
+		bla(){
+			return 2
+		}
+		get ha(){
+			return 3
+		}
+	})
+
+	const Monkey = transpile(class Monkey extends Animal {
+		static create() {
+			return new Monkey
+		}
+		constructor() {
+			super()
+		}
+	});
+
+	console.log(Monkey().ha)
+```
